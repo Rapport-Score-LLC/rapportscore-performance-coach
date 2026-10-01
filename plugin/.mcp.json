@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "rapportscore": {
+      "type": "http",
+      "url": "https://mcp.rapportscore.ai/mcp"
+    }
+  }
+}

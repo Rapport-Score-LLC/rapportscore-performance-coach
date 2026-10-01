@@ -1,0 +1,27 @@
+Performance Coach by RapportScore - Plugin License
+
+Copyright (c) 2026 Rapport Score LLC. All rights reserved.
+
+Permission is granted, free of charge, to any person to install and use this
+plugin with Claude (claude.ai, Claude Code, Cowork, and other Claude surfaces)
+for personal or internal business coaching.
+
+The coaching knowledge in this plugin (the "coach brain") is published for
+transparency and for use inside coaching agents paired with RapportScore.
+No license is granted to:
+
+1. Republish, redistribute, or sell the coach brain content outside this
+   plugin or the public corner-coach-brain repository.
+2. Use the content to build or train a competing conversation-intelligence
+   or coaching product or service.
+3. Present modified copies of the content as RapportScore's.
+
+RapportScore account data is governed separately by the RapportScore Terms of
+Service (https://app.rapportscore.ai/terms.html) and Privacy Policy
+(https://app.rapportscore.ai/privacy.html).
+
+THE PLUGIN IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+RAPPORT SCORE LLC BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING
+FROM THE USE OF THE PLUGIN.

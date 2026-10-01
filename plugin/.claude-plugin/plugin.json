@@ -1,0 +1,21 @@
+{
+  "name": "rapportscore-performance-coach",
+  "displayName": "Performance Coach by RapportScore",
+  "version": "1.0.0",
+  "description": "Communication performance coaching grounded in RapportScore's open coach brain: deterministic conversation measurements, the 7 Rapport Dimensions, belt progression, drills, and evidence-first coaching on your own recorded conversations.",
+  "author": {
+    "name": "Rapport Score LLC",
+    "url": "https://app.rapportscore.ai"
+  },
+  "homepage": "https://app.rapportscore.ai",
+  "repository": "https://github.com/Rapport-Score-LLC/rapportscore-performance-coach",
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "coaching",
+    "communication",
+    "conversation-analysis",
+    "rapport",
+    "sales-coaching",
+    "performance"
+  ]
+}
