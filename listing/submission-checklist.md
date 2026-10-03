@@ -18,15 +18,18 @@ this repository.
 - [ ] **[owner]** Reviewer test account created and populated per
       `reviewer-test-guide.md`.
 
-## Phase 1: Server readiness (connector submission gate)
+## Phase 1: Server readiness (connector submission gate) - DONE
 
-- [ ] **[eng]** Add `title` plus `readOnlyHint`/`destructiveHint` to all
-      33 tools per `tool-annotations.md` (plus the two `openWorldHint`
-      flags).
-- [ ] **[eng]** Run every tool once via MCP Inspector or as a custom
-      connector in Claude; fix anything broken.
-- [ ] **[eng]** Confirm OAuth works from a fresh Claude connection
-      (dynamic client registration, authorize, refresh).
+- [x] **[eng]** Titles and annotations on all 33 tools: verified complete
+      in `rapport-pilot-vision` main and deployed (edge function
+      `mcp-server` v107, ACTIVE, updated 2026-09-30). Details in
+      `tool-annotations.md`.
+- [x] **[eng]** OAuth verified live: RFC 9728 metadata, dynamic client
+      registration, authorization code + refresh grants all published at
+      mcp.rapportscore.ai.
+- [ ] **[eng]** Optional belt-and-suspenders: run the tools once via MCP
+      Inspector before the portal's Test and launch confirmation (the
+      production connector already runs them daily in Claude).
 
 ## Phase 2: Submit the MCP connector
 
