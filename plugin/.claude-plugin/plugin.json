@@ -10,6 +10,10 @@
   "homepage": "https://app.rapportscore.ai",
   "repository": "https://github.com/Rapport-Score-LLC/rapportscore-performance-coach",
   "license": "SEE LICENSE IN LICENSE",
+  "privacyPolicyUrl": "https://app.rapportscore.ai/privacy.html",
+  "termsOfServiceUrl": "https://app.rapportscore.ai/terms.html",
+  "supportUrl": "https://app.rapportscore.ai/help",
+  "documentationUrl": "https://app.rapportscore.ai/help",
   "keywords": [
     "coaching",
     "communication",
