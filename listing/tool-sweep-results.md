@@ -40,7 +40,7 @@ Primary test session: f99b8c7d (Ronald Skelton and Daniel Andrews,
 | list_team_reports | PASS |
 | list_team_sessions | PASS |
 
-## Bug for engineering (fix before reviewers poke it)
+## Bug for engineering (fix open: rapport-pilot-vision PR #1154)
 
 `get_next_step` with the session_id of a COMPLETED session returns
 "Something went wrong handling this request." The no-argument call
