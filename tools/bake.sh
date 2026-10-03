@@ -13,8 +13,10 @@ REPO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 DEST="$REPO_ROOT/plugin/skills/performance-coach/references/brain"
 BRAIN_REPO="https://github.com/Rapport-Score-LLC/corner-coach-brain.git"
 
-# Known banned-token violations, tracked in listing/submission-checklist.md.
-# Remove entries here once fixed upstream.
+# Founder-cleared uses of banned stems (adjudicated 2026-10-03, not issues).
+# Belt-lesson curriculum copy mirrors shipped belt_lessons product rows, and
+# governance precedence puts shipped product copy above the token list; the
+# receipt note names the stem only to coach against it.
 KNOWN_ISSUES=(
   "coaching/training-curriculum-map.md"
   "coaching/receipt-to-inner-driver.md"
@@ -76,8 +78,6 @@ check_token() {
 }
 check_token "AI-powered" "AI-powered" || fail=1
 check_token "diagnos*" "diagnos" || fail=1
-echo "NOTE: known banned-token issues still present upstream:"
-printf '  %s\n' "${KNOWN_ISSUES[@]}"
 
 # Check 4: file hygiene (directory limits: text only, <256 KiB, <=512 files)
 big="$(find "$REPO_ROOT/plugin" -type f -size +255k || true)"

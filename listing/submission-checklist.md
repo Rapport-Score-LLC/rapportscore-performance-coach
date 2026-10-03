@@ -54,16 +54,12 @@ this repository.
 - [ ] Watch the connector health dashboard and the plugin Usage tab for
       the first week.
 
-## Known content issues (do not block submission; fix in the brain repo)
+## Content rulings
 
-Two notes in the vendored brain use the banned "diagnos*" stem:
-
-1. `coaching/training-curriculum-map.md` line 82 ("Diagnose any
-   conversation" as lesson BK1's outcome). The lesson name may be bound
-   to a belt_lessons product row; rename in the product first, then the
-   note.
-2. `coaching/receipt-to-inner-driver.md` line 34 ("multiple-choice
-   diagnosis").
-
-`tools/bake.sh` reports both as known issues on every run until fixed
-upstream in corner-coach-brain.
+Two uses of the "diagnos" stem in the vendored brain are founder-cleared
+(adjudicated 2026-10-03), not violations: the belt-lesson curriculum copy
+in `coaching/training-curriculum-map.md` mirrors shipped belt_lessons
+product rows, and governance precedence puts shipped product copy above
+the banned-token list; `coaching/receipt-to-inner-driver.md` names the
+stem only to coach against the behavior. `tools/bake.sh` allowlists both
+and flags only NEW uses elsewhere.
