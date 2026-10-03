@@ -11,6 +11,8 @@ set -euo pipefail
 
 REPO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 DEST="$REPO_ROOT/plugin/skills/performance-coach/references/brain"
+# The OpenAI package carries the same skill; keep both vendored copies in step.
+DEST_OPENAI="$REPO_ROOT/openai/skills/performance-coach/references/brain"
 BRAIN_REPO="https://github.com/Rapport-Score-LLC/corner-coach-brain.git"
 
 # Founder-cleared uses of banned stems (adjudicated 2026-10-03, not issues).
@@ -47,6 +49,15 @@ rsync -a --delete \
   --exclude='.git' --exclude='_meta' --exclude='.DS_Store' \
   --exclude='README.md' --exclude='.gitignore' \
   "$SRC/" "$DEST/"
+if [[ -d "$REPO_ROOT/openai" ]]; then
+  echo "Vendoring bake set into openai package ..."
+  rsync -a --delete \
+    --exclude='.git' --exclude='_meta' --exclude='.DS_Store' \
+    --exclude='README.md' --exclude='.gitignore' \
+    "$SRC/" "$DEST_OPENAI/"
+  cp "$REPO_ROOT/plugin/skills/performance-coach/SKILL.md" \
+     "$REPO_ROOT/openai/skills/performance-coach/SKILL.md"
+fi
 
 fail=0
 
